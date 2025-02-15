@@ -1,5 +1,5 @@
 opencost:
-  loglevel: debug
+  loglevel: info
 
   opencost:
     
