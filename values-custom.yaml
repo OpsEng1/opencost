@@ -1,3 +1,5 @@
+loglevel: debug
+
 opencost:
   customPricing:
     enabled: true
@@ -7,14 +9,13 @@ opencost:
       RAM: 0.60
       GPU: 0.96
       storage: 0.25
-
   prometheus:
-    internal:
+    external:
       enabled: false
-    serverEndpoint: "http://prometheus-server.monitoring.svc.cluster.local:80"
-
-
-loglevel: debug
-
+    internal:
+      enabled: true
+      serviceName: prometheus-server
+      namespaceName: monitoring
+      port: 80
 
 
