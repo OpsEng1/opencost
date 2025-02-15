@@ -2,6 +2,8 @@ opencost:
   loglevel: debug
 
   opencost:
+    exporter:
+      replicas: 3
     customPricing:
       enabled: true
       costModel:
