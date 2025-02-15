@@ -9,6 +9,8 @@ opencost:
       storage: 0.25
 
   prometheus:
+    internal:
+      enabled: false
     serverEndpoint: "http://prometheus-server.monitoring.svc.cluster.local:80"
 
 
