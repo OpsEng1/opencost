@@ -16,6 +16,7 @@ opencost:
       serviceName: prometheus-server
       namespaceName: monitoring
       port: 80
-    serverEndpoint: "http://prometheus-server.monitoring.svc.cluster.local:80"
+  
+  prometheusServerEndpoint: "http://prometheus-server.monitoring.svc.cluster.local:80"
 
 loglevel: debug
