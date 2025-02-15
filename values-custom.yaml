@@ -9,13 +9,8 @@ opencost:
       storage: 0.25
 
   prometheus:
-    external:
-      enabled: false
-    internal:
-      enabled: true
-      serviceName: prometheus-server
-      namespaceName: monitoring
-      port: 80
+    serverEndpoint: "http://prometheus-server.monitoring.svc.cluster.local:80"
+
 
 loglevel: debug
 
