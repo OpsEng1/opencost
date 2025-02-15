@@ -2,6 +2,7 @@ opencost:
   loglevel: debug
 
   opencost:
+    clusterID: "k3s-cluster"
     exporter:
       replicas: 3
     customPricing:
