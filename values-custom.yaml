@@ -8,7 +8,9 @@ opencost:
       GPU: 0.96
       storage: 0.25
 
-  prometheus: 
+  prometheus:
+    external:
+      enabled: false
     internal:
       enabled: true 
       serviceName: prometheus-server
