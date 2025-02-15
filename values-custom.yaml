@@ -1,0 +1,18 @@
+loglevel: debug
+
+opencost:
+  customPricing:
+    enabled: true
+    costModel:
+      description: Modified pricing configuration.
+      CPU: 1.26
+      RAM: 0.60
+      GPU: 0.96
+      storage: 0.25
+
+  prometheus: 
+    internal:
+      enabled: true 
+      serviceName: prometheus-server
+      namespaceName: monitoring
+      port: 80
