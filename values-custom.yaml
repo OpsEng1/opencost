@@ -1,10 +1,10 @@
 opencost:
   loglevel: debug
-  clusterName: "k3s-cluster"
 
   opencost:
     
     exporter:
+      defaultClusterId: "k3s-cluster"
       replicas: 3
     customPricing:
       enabled: true
